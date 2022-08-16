@@ -24,6 +24,15 @@
         "a11y",
         "code"
       ]
+    },
+    {
+      "login": "LucasG04",
+      "name": "Lucas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42368417?v=4",
+      "profile": "https://github.com/LucasG04",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,

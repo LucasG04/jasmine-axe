@@ -5,7 +5,9 @@
 
 [![npm version](https://img.shields.io/npm/v/jasmine-axe.svg)](https://www.npmjs.com/package/jasmine-axe)
 
-Custom [Jasmine](https://jasmine.github.io/) matcher for [aXe](https://github.com/dequelabs/axe-core) for testing accessibility
+[![aXe version](https://img.shields.io/npm/v/axe-core.svg)](https://www.npmjs.com/package/axe-core)
+
+Fork for custom [Jasmine](https://jasmine.github.io/) matcher for [aXe](https://github.com/dequelabs/axe-core) for testing accessibility with an up-to-date version of axe-core
 
 ## Installation:
 
