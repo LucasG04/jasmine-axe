@@ -1,9 +1,10 @@
 {
   "name": "@lucasg04/jasmine-axe",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "release": "npm run build && npm publish"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
