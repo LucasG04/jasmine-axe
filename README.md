@@ -1,11 +1,7 @@
 # jasmine-axe
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-[![npm version](https://img.shields.io/npm/v/jasmine-axe.svg)](https://www.npmjs.com/package/jasmine-axe)
+![NPM Version](https://img.shields.io/npm/v/%40lucasg04%2Fjasmine-axe) ![GitHub package.json prod dependency version](https://img.shields.io/github/package-json/dependency-version/LucasG04/jasmine-axe/axe-core)
 
-[![aXe version](https://img.shields.io/npm/v/axe-core.svg)](https://www.npmjs.com/package/axe-core)
 
 Fork for custom [Jasmine](https://jasmine.github.io/) matcher for [aXe](https://github.com/dequelabs/axe-core) for testing accessibility with an up-to-date version of axe-core
 
