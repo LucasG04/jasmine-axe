@@ -3,12 +3,12 @@
 ![NPM Version](https://img.shields.io/npm/v/%40lucasg04%2Fjasmine-axe) ![GitHub package.json prod dependency version](https://img.shields.io/github/package-json/dependency-version/LucasG04/jasmine-axe/axe-core)
 
 
-Fork for custom [Jasmine](https://jasmine.github.io/) matcher for [aXe](https://github.com/dequelabs/axe-core) for testing accessibility with an up-to-date version of axe-core
+Fork for custom [Jasmine](https://jasmine.github.io/) matcher for [axe](https://github.com/dequelabs/axe-core) for testing accessibility with an up-to-date version of axe-core
 
 ## Installation:
 
 ```bash
-npm install --save-dev jasmine-axe
+npm install --save-dev @lucasg04/jasmine-axe
 ```
 
 ## Usage:
@@ -17,7 +17,7 @@ npm install --save-dev jasmine-axe
 
 ```javascript
 import { TestBed } from "@angular/core/testing";
-import { axe, toHaveNoViolations } from "jasmine-axe";
+import { axe, toHaveNoViolations } from "@lucasg04/jasmine-axe";
 import TestComponent from "./TestComponent.component";
 
 describe("TestComponent", () => {
@@ -44,7 +44,7 @@ This matcher should be use as a temporary fix, the objective is of course to hav
 
 ```javascript
 import { TestBed } from "@angular/core/testing";
-import { axe, toHaveLessThanXViolations } from "jasmine-axe";
+import { axe, toHaveLessThanXViolations } from "@lucasg04/jasmine-axe";
 import TestComponent from "./TestComponent.component";
 
 describe("TestComponent", () => {
@@ -68,7 +68,7 @@ describe("TestComponent", () => {
 The `axe` function allows options to be set with the [same options as documented in axe-core](https://github.com/dequelabs/axe-core/blob/master/doc/API.md#options-parameter):
 
 ```javascript
-import { axe, toHaveNoViolations } from "jasmine-axe";
+import { axe, toHaveNoViolations } from "@lucasg04/jasmine-axe";
 
 describe("TestComponent", () => {
   beforeEach(() => {
@@ -108,7 +108,7 @@ The configuration object passed to `configureAxe` also accepts a `globalOptions`
 
 ```javascript
 // Global helper file (axe-helper.js)
-import { configureAxe } from "jasmine-axe";
+import { configureAxe } from "@lucasg04/jasmine-axe";
 
 const axe = configureAxe({
   rules: {
@@ -157,5 +157,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
