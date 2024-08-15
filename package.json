@@ -1,24 +1,22 @@
 {
   "name": "@lucasg04/jasmine-axe",
-  "version": "1.1.2",
+  "version": "1.1.5",
   "license": "MIT",
-  "angular-cli": {},
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "release": "npm run clean && npm run build && npm publish"
   },
-  "main": "./index.js",
-  "types": "./index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
-    "axe-core": "^4.4.3",
-    "lodash.merge": "^4.6.2"
+    "axe-core": "^4.10.0"
   },
   "devDependencies": {
     "@types/jasmine": "^3.6.4",
-    "@types/lodash.merge": "^4.6.6",
-    "all-contributors-cli": "^6.20.0",
     "typescript": "^4.2.3"
   },
-  "description": "Fork for custom Jasmine matcher for aXe for testing accessibility with an up-to-date version of axe-core",
+  "description": "Fork for custom Jasmine matcher for axe for testing accessibility with an up-to-date version of axe-core",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lucasg04/jasmine-axe.git"
@@ -29,7 +27,7 @@
     "axe",
     "a11y"
   ],
-  "author": "Mathilde Duboille",
+  "author": "Mathilde Duboille, LucasG04",
   "bugs": {
     "url": "https://github.com/lucasg04/jasmine-axe/issues"
   },

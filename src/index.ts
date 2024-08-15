@@ -1,5 +1,4 @@
 import * as axeCore from "axe-core";
-import merge from "lodash.merge";
 import { AxeResults, ImpactValue, Result, RunOptions, Spec } from "axe-core";
 import jasmine from "jasmine";
 
@@ -70,7 +69,7 @@ export const configureAxe = (options: JasmineAxeConfigureOptions = {}) => {
    */
   return function axe(html: Element, additionalOptions = {}) {
     const [element, restore] = mount(html);
-    const options = merge({}, runnerOptions, additionalOptions);
+    const options = {...runnerOptions, ...additionalOptions};
 
     return new Promise((resolve, reject) => {
       axeCore.run(element, options, (err, results) => {
