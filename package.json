@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
+    "test": "npm run build && jasmine",
     "clean": "rm -rf dist",
     "release": "npm run clean && npm run build && npm publish"
   },
@@ -13,7 +14,11 @@
     "axe-core": "^4.10.0"
   },
   "devDependencies": {
-    "@types/jasmine": "^3.6.4",
+    "@types/jasmine": "^5.1.4",
+    "@types/jsdom": "^21.1.7",
+    "canvas": "^2.11.2",
+    "jasmine": "^5.4.0",
+    "jsdom": "^25.0.1",
     "typescript": "^4.2.3"
   },
   "description": "Fork for custom Jasmine matcher for axe for testing accessibility with an up-to-date version of axe-core",

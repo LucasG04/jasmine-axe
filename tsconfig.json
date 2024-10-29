@@ -15,6 +15,6 @@
         "forceConsistentCasingInFileNames": true,
         "esModuleInterop": true,
     },
-    "include": ["src/**/*"],
+    "include": ["src/**/*", "spec/**/*"],
     "exclude": ["node_modules", "dist"]
 }
