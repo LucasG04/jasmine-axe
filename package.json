@@ -1,15 +1,16 @@
 {
   "name": "@lucasg04/jasmine-axe",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
+    "build:prod": "tsc -p tsconfig.prod.json",
     "test": "npm run build && jasmine",
     "clean": "rm -rf dist",
-    "release": "npm run clean && npm run build && npm publish"
+    "release": "npm run clean && npm run build:prod && npm publish"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "dependencies": {
     "axe-core": "^4.10.2"
   },
